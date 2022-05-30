@@ -1,0 +1,90 @@
+nav, footer{
+
+    display: flex;
+    justify-content:space-between;
+    background-color: black;
+}/* changment de place de l'image et du slogan, changement de couleur de fond des liens*/
+
+nav a, footer a {
+    color: white;
+}/*changement de la couleur des liens*/
+
+#logo {
+    width: 25%;
+    height: 50%;
+} /* j'ai changer la taille de l'image */
+
+#entête {
+    display:flex;
+    justify-content:space-around
+} /*j'ai changer de place l'image+le <h1>*/
+
+#promotion {
+    display: flex;
+    width: 100%;
+}
+
+.colonne {
+    display: flex;
+    justify-content:flex-start;
+}
+
+#colonneone {
+    flex-direction: column;
+    width: 75%;
+}
+
+#colonnetwo {
+    background-color: grey;
+    width: 35%;
+}
+
+/* #titre {
+    color: red;
+} */
+
+@media screen and (max-width: 768px) {
+
+#colonnetwo {
+    display: none;
+}
+
+
+#promotion {
+    width: 100%;
+}
+/* #titre {
+    color: blue;
+} */
+
+#logo {
+    display: flex;
+    max-width: 25%;
+    height: auto;
+}
+
+
+#titre {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+}
+
+
+nav {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+}
+
+
+html {
+    font-size: 2vw;
+}
+
+}
