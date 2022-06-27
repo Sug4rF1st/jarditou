@@ -3,7 +3,7 @@ nav, footer{
     display: flex;
     justify-content:space-between;
     background-color: black;
-}/* changment de place de l'image et du slogan, changement de couleur de fond des liens*/
+}/* changement de place de l'image et du slogan, changement de couleur de fond des liens*/
 
 nav a, footer a {
     color: white;
@@ -87,4 +87,14 @@ html {
     font-size: 2vw;
 }
 
+}
+
+input:invalid
+{
+    border: 2px dashed red;
+}
+
+input:valid
+{
+    border: 1px solid black;
 }

@@ -39,10 +39,10 @@
     <img src="src/image/logo/promotion.jpg" alt="promotion" id="promotion"> 
 
 
-    <form action="http://bienvu.net/script.php" method="get" id="formulaire_contact">
+    <form action="http://bienvu.net/script.php" method="post" id="formulaire_contact">
 
 
-        <h1>Conact</h1>
+        <h1>Contact</h1>
         <hr>
 
 
@@ -53,15 +53,39 @@
             
             
             <legend>Vos coordonnées</legend>
-            <label for="nom">Votre nom* : </label><input type="text" name="nom" id="nom"><br>
-            <label for="nom">Votre prénom* : </label><input type="text" name="prénom" id="prénom"><br>
-            <label for="nom">Sexe* : </label><input type="radio" name="Sexe" value="Féminin"> Féminin
-                                            <input type="radio" name="Sexe" Value="Masculin"> Masculin<br>
-            <label for="nom">Date de naissance* : </label><input type="date" name="ddn" id="date"><br>
-            <label for="nom">Code postal* : </label><input type="text" name="chiffre" id="chiffre"><br>
-            <label for="nom">Adresse : </label><input type="text" name="?" id="?"><br>
-            <label for="nom">Ville : </label><input type="text" name="ville" id="ville"><br>
-            <label for="nom">Email* : </label><input type="text" placeholder="dave.loper@afpa.fr">
+            <br>
+
+            <label for="nom">Votre nom* : </label><input type="text" name="nom" id="nom" required>
+            <span id="missNom"></span>
+            <br>
+            <br>
+            <label for="nom">Votre prénom* : </label><input type="text" name="prenom" id="prenom" required>
+            <span id="missPrenom"></span>
+            <br>
+            <br>
+            <label for="nom" required>Sexe* : </label><input type="radio" name="Sexe" value="Féminin"> Féminin
+                                            <input type="radio" name="Sexe" Value="Masculin"> Masculin
+                                            <br>
+                                            <br>
+            <label for="nom">Date de naissance* : </label><input type="date" name="ddn" id="date" required>
+            <br>
+            <br>
+            <label for="nom">Code postal* : </label><input type="text" name="chiffre" id="CP" required>
+            <span id="missCP"></span>
+            <br>
+            <br>
+            <label for="nom">Adresse : </label><input type="text" name="adresse" id="adresse" required>
+            <span id="missAdresse"></span>
+            <br>
+            <br>
+            <label for="nom">Ville : </label><input type="text" name="ville" id="ville" required>
+            <span id="missVille"></span>
+            <br>
+            <br>
+            <label for="nom">Email* : </label><input type="text" placeholder="dave.loper@afpa.fr" id="email" required>
+            <span id="missEmail"></span>
+            <br>
+            <br>
         
         
         </fieldset>
@@ -71,28 +95,42 @@
             
             
             <legend>Votre demande</legend>
+            
             <label for="sujet">Sujet* : </label>
-            <select id="sujet">
+            <span id="missSujet"></span>
+            <select id="sujet" required>
                 <option value="" selected>Veuillez selectionner un sujet</option>
                 <option value="Mes commandes">Mes commandes</option>
                 <option value="Question sur un produit">Question sur un produit</option>
                 <option value="Réclamation">Réclamation</option>
                 <option value="Autres">Autres</option>
             </select>
-            <br><label for="nom">Votre question* : </label>
-            <textarea name="nom" Rows="2" cols="30"></textarea><br>
-        
+            <br>
+            <br>
+            
+            <label for="nom">Votre question* : </label>
+            
+            <textarea id="Question1" name="Question1" Rows="2" cols="30" required></textarea><br>
+        <br>
+        <br>
         
         </fieldset>
 
 
-        <input type="checkbox" name="text" value="text">*J'accepte le traitement informatique de ce formulaire<br>
-        <input type="submit" value="Envoyer"><button type="submit">Annuler</button><br>
+        <input type="checkbox" name="text" value="text" required>*J'accepte le traitement informatique de ce formulaire
+        <br>
+        <br>
+        <button type="submit" class="btn btn-dark" id="Bouton_envoi">Envoyer</button>
+        <button type="reset" class="btn btn-dark">Annuler</button>
+        <br>
+        <br>
 
 
     </form>
-    <hr>
 
+    <hr>
+    
+    <script src="assets/css/contact.js"></script>
 
 </body>
 
