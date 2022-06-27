@@ -2,11 +2,11 @@ nav, footer{
 
     display: flex;
     justify-content:space-between;
-    background-color: black;
+    background-color: white;
 }/* changement de place de l'image et du slogan, changement de couleur de fond des liens*/
 
 nav a, footer a {
-    color: white;
+    color: black;
 }/*changement de la couleur des liens*/
 
 #logo {
